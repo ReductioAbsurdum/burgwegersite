@@ -1,14 +1,14 @@
 // JavaScript Document
 
-var texts = ['Hello . . . thank you for checking out my website.', 'I am a junior web developer excited to share my projects with you . . . ', 'My interests include programming for the web, good front-end design, and finding ways to bring originality to a website.', 'I hope you enjoy your user experience here!'];
+var texts = ['Hello . . . thank you for checking out my website.', 'I am a KC based web developer excited to share my projects with you . . . ', 'My interests include programming for the web, good front-end and back-end design, and finding ways to bring originality to a website.', 'Check out some of my projects!'];
 
 $(document).ready(function(){
-	
+
 	var drop = $(".drop");
 	var show = $(".show");
 	var ul = $("ul");
 	show.append(ul);
-	
+
 	$("#dropdown").click(function(){
 		drop.append(ul);
 		drop.toggle();
@@ -16,11 +16,11 @@ $(document).ready(function(){
 			show.append(ul);
 		}
 	});
-	
+
 	setInterval('cursorBlink()', 500);
-	
+
 		type();
-	
+
 });
 
 var textlength = 0;
