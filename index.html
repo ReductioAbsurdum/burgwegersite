@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML,CSS,JavaScript, Web, Development, Design">
+<meta name="author" content="Benjamin Burgweger">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin's Personal Website!</title>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Alegreya+Sans|Indie+Flower|Oswald" rel="stylesheet">
+<link href="styles.css" type="text/css" rel="stylesheet"/>
+<link href="glyphicons_free"/>
+<link href="font_awesome_4_6_3/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')</script>
+<script src="js/javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--Splash/Navigation and Title Page----------------------->
+<section id="home">
+<div id="splash"></div>
+<div id="nav">
+<div id="decal"><a href="#home" class="button">BENJAMIN BURGWEGER'S WEBSITE</a></div>
+<div class="show">
+</div>
+<ul>
+<li><a href="#projects" class="button side">PROJECTS</a></li>
+<li><a href="#icon-holder" class="button side">CONNECT</a></li>
+<li><a href="#about" class="button side">ABOUT</a></li>
+</ul>
+<div class="drop">
+</div>
+<i id="dropdown" class="fa fa-bars fa-3x" aria-hidden="true"></i>
+</div>
+<div id="home_inner_content">
+	<div id="inside">
+        <span id="text"></span>
+        <span id="cursor">|</span>
+    </div>
+</div>
+</section>
+
+<!--body content -->
+<section id="content">
+
+<div id="about">
+<div class="arrow" style="margin: auto;"></div>
+
+<img src="assets/spore-min.png" alt="Benjamin"/>
+
+<h3>Hello! My name is Benjamin Burgweger</h3>
+<p>I am a web developer based in Kansas City. I enjoy learning about the many facets of web design as well as how to create cool front-end applications using HTML, CSS, and Javascript!</p>
+
+<div id="icon-holder">
+<h1>Connect with me online</h1>
+<span>
+<a href="https://github.com/ReductioAbsurdum" target="_blank"><i class="icon fa fa-github fa-3x" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/benjamin-burgweger-9414a0115" target="_blank"><i class="icon fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+<a title="Email" href="mailto:bwchancellor@gmail.com"><i class="icon fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+</span>
+</div>
+</div><!--end about -->
+
+<div id="projects">
+	<h1>THESE ARE SOME OF THE PROJECTS I BUILT</h1>
+
+		<div id="pianoproject" style="background-image: url(assets/piano_long.png);">
+		<a href="sites/piano/controller/index.php" target="_blank"><div class="overlay"><p>Piano Flashcards</p><p>Click to view</p></div></a>
+		</div>
+
+    <div class="proj" style="background-image: url(assets/weather.png);">
+    <a href="http://codepen.io/burg10/full/gwOVaO/" target="_blank"><div class="overlay"><p>Weather app</p><p>Click to view</p></div></a>
+    </div>
+
+    <div class="proj" style="background-image: url(assets/pomd.png);">
+    <a href="sites/pomodoro/pomodoro.html" target="_blank"><div class="overlay"><p>Pomodoro clock</p><p>Click to view</p></div></a>
+    </div>
+
+    <div class="proj" style="background-image: url(assets/wiki.png);">
+    <a href="sites/wiki/wiki.html" target="_blank"><div class="overlay"><p>Wiki app</p><p>Click to view</p></div></a>
+    </div>
+
+    <div class="proj" style="background-image: url(assets/calc.png);">
+    <a href="sites/calc/calc.html" target="_blank"><div class="overlay"><p>FSU Calc</p><p>Click to view</p></div></a>
+    </div>
+
+    <div class="proj" style="background-image: url(assets/simon.png);">
+    <a href="sites/simon/simon.html" target="_blank"><div class="overlay"><p>Simon Says</p><p>Click to view</p></div></a>
+    </div>
+
+    <div class="proj" style="background-image: url(assets/quote.png);">
+    <a href="sites/quote/quote.html" target="_blank"><div class="overlay"><p>Quote Generator</p><p>Click to view</p></div></a>
+    </div>
+
+</div><!--end projects -->
+
+<div id="footer">
+<p>&copy; Benjamin C. Burgweger 2016</p>
+</div>
+</section>
+
+
+<!--Scrolling Navigation Script------------>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('.button').click(function() {
+    var targetName = $(this).attr('href');
+    var targetLocation = $(targetName).offset().top;
+    $('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
+  });
+});
+</script>
+</body>
+</html>
